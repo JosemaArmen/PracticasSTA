@@ -2,7 +2,10 @@ async function hacerPeticion () {
 	let input = document.getElementById("input");
 	let nombrePelicula = input.value;
 
-	let respuesta = await fetch('https://www.omdbapi.com/?apikey=8441a313&t=' + nombrePelicula + '&plot=full');
+	//let respuesta = await fetch('https://www.omdbapi.com/?apikey=8441a313&t=' + nombrePelicula + '&plot=full');
+	
+	let respuesta = await fetch(`https://www.omdbapi.com/?apikey=8441a313&t=${nombrePelicula}&plot=full`);
+	
 	let respuestaJson = await respuesta.json();
 
 	let espacioDirector = document.getElementById("espacioDirector");
