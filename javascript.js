@@ -5,7 +5,7 @@ function hacerPeticion () {
 	let espacioDirector = document.getElementById("espacioDirector");
 	let espacioAnio = document.getElementById("espacioAnio");
 
-	fetch('http://www.omdbapi.com/?apikey=8441a313&s=' + nombrePelicula + '&plot=full')
+	fetch('https://www.omdbapi.com/?apikey=8441a313&s=' + nombrePelicula + '&plot=full')
 		.then(response => {
 			return response.json();
 				  })
