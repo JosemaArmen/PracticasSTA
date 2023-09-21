@@ -8,8 +8,8 @@ async function hacerPeticion () {
 	let espacioDirector = document.getElementById("espacioDirector");
 	let espacioAnio = document.getElementById("espacioAnio");
 
-	await espacioDirector.innerHTML = respuestaJson['Director'];
-	await espacioAnio.innerHTML = respuestaJson['Year'];
+	espacioDirector.innerHTML = await respuestaJson['Director'];
+	espacioAnio.innerHTML = await respuestaJson['Year'];
 }
 
 let boton = document.getElementById("boton");
